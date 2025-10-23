@@ -8,7 +8,7 @@
     ansible.builtin.apt:
       upgrade: dist
       update_cache: yes
-    when: ansible_distibution == "Ubuntu"
+    when: ansible_distribution == "Ubuntu"
 
   - name: install apache2
     ansible.builtin.apt:
